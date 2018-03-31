@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './styles/header.css';
-import { connect } from 'react-redux';
 import Logo from './components/Logo';
 import NavTabs from './components/NavTabs';
 import SignIn from './components/SignIn';
