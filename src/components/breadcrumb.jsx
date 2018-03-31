@@ -6,7 +6,7 @@ class Breadcrumb extends Component {
     return (
       <div className="breadcrumb-container">
         <span className="breadcrumb-path">
-          <i class="fa fa-home"></i> Home
+          <i className="fa fa-home"></i> Home
         </span>
         <span className="breadcrumb-activities">
           All Activities
