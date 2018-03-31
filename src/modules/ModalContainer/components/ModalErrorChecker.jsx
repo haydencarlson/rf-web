@@ -12,7 +12,6 @@ class ModalErrorChecker extends Component {
   }
 
   render() {
-    console.log(this.props)
     if (this.state.hasError) {
       return (
         <h4>

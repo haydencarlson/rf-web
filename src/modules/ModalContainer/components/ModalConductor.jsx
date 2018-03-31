@@ -21,9 +21,8 @@ class ModalConductor extends React.Component {
       default:
       this.modal = null;
     }
-    console.log(this.props)
     return (
-      <div className="netcents-modal">
+      <div className="rt-forums-modal">
         <ModalErrorChecker>{this.modal}</ModalErrorChecker>
       </div>
     );
