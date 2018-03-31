@@ -14,13 +14,12 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <header>
         <div className="header-container">
           <Logo />
           <div className="nav-menu-items">
-            <NavTabs items={this.state.navItems}/>
+            <NavTabs {...this.props} items={this.state.navItems}/>
           </div>
         </div>
       </header>
