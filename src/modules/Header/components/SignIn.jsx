@@ -7,7 +7,8 @@ class SignInNavItem extends Component {
     var { location } = this.props;
     return (
       <a className="sign-in-button button-primary" value="Sign In">
-        asd
+        Sign In
+        <i class="fa fa-caret-down"></i>
       </a>
     )
   }

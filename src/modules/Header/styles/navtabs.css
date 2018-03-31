@@ -6,9 +6,12 @@ ul {
     display: inline; }
 
 .nav-menu-items {
-  margin: auto;
   display: flex;
-  justify-content: space-around; }
+  height: 40px;
+  border-bottom: 1px solid #434652; }
+  .nav-menu-items .nav-items-container {
+    flex: 1;
+    margin-top: 5px; }
   .nav-menu-items .nav-item a {
     text-decoration: none;
     color: #7a85ad;

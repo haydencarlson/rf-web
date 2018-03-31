@@ -7,9 +7,13 @@ ul {
   }
 }
 .nav-menu-items {
-  margin: auto;
   display: flex;
-  justify-content: space-around;
+  height: 40px;
+  border-bottom: 1px solid #434652;
+  .nav-items-container {
+    flex: 1;
+    margin-top: 5px;
+  }
   .nav-item {
     a {
       &.active {

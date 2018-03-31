@@ -1,0 +1,14 @@
+.nav-search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .nav-search-box .search-input {
+    height: 30px;
+    width: 180px;
+    background: #434652;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    color: white; }
