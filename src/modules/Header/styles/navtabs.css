@@ -1,14 +1,15 @@
 ul {
   padding: 0;
+  margin: 0;
   text-align: center; }
   ul li {
     display: inline; }
 
 .nav-menu-items {
-  width: 200px;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  justify-content: space-around; }
   .nav-menu-items .nav-item a {
-    border-bottom: 2px solid #3ca0ff;
     text-decoration: none;
     color: #7a85ad;
     font-family: 'Open Sans', sans-serif;
@@ -16,3 +17,5 @@ ul {
     font-weight: bold;
     padding: 18px 15px;
     text-transform: uppercase; }
+    .nav-menu-items .nav-item a.active {
+      border-bottom: 2px solid #3ca0ff; }

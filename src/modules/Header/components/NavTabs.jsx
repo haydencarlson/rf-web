@@ -4,12 +4,11 @@ import '../styles/navtabs.css';
 
 class NavTabs extends Component {
 
-  renderNavItems(items) {
-    console.log(this.props)
+  renderNavItems(items, location) {
     return items.map((item) => {
       return (
         <li key={item.text} className="nav-item">
-          <Link to={item.url}>
+          <Link className={location.pathname === item.url ? 'active' : null }to={item.url}>
             {item.text}
           </Link>
         </li>
@@ -18,10 +17,11 @@ class NavTabs extends Component {
   }
 
   render() {
+    var { location } = this.props;
     return (
       <div className="nav-items-container">
         <ul>
-          {this.renderNavItems(this.props.items)}
+          {this.renderNavItems(this.props.items, location)}
         </ul>
       </div>
     )
