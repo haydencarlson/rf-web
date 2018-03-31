@@ -6,9 +6,11 @@ class Search extends Component {
   render() {
     var { location } = this.props;
     return (
-      <a className="sign-in-button button-primary" value="Sign In">
-        asd
-      </a>
+      <div className="nav-search-box">
+        <div className="nav-search-container">
+          <input className="search-input" placeholder="Search..."/>
+        </div>
+      </div>
     )
   }
 }

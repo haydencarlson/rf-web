@@ -23,7 +23,9 @@ class Header extends Component {
           <div className="nav-menu-items">
             <Search/>
             <NavTabs {...this.props} items={this.state.navItems}/>
-            <SignIn/>
+            <div className="nav-menu-auth">
+              <SignIn/>
+            </div>
           </div>
         </div>
       </header>
