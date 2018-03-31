@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './styles/header.css';
 import Logo from './components/Logo';
 import NavTabs from './components/NavTabs';
 import SignIn from './components/SignIn';
 import Search from './components/Search';
+import { showModal } from '../ModalContainer/reduxer';
 
 class Header extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -19,11 +20,11 @@ class Header extends Component {
       <header>
         <div className="header-container">
           <Logo />
-          <div className="nav-menu-items rf-layout-container">
+          <div className="nav-menu-items rt-layout-container">
             <Search/>
             <NavTabs {...this.props} items={this.state.navItems}/>
             <div className="nav-menu-auth">
-              <SignIn/>
+              <SignIn {...this.props} />
             </div>
           </div>
         </div>
@@ -32,5 +33,8 @@ class Header extends Component {
   }
 }
 
+const mapDispatchToProps = {
+  showModal
+}
 
-export default Header;
+export default connect(null, mapDispatchToProps)(Header);
