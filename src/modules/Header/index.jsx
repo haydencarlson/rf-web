@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './styles/header.css';
-import { connect } from 'react-redux';
 import Logo from './components/Logo';
 import NavTabs from './components/NavTabs';
 import SignIn from './components/SignIn';
@@ -20,7 +19,7 @@ class Header extends Component {
       <header>
         <div className="header-container">
           <Logo />
-          <div className="nav-menu-items">
+          <div className="nav-menu-items rf-layout-container">
             <Search/>
             <NavTabs {...this.props} items={this.state.navItems}/>
             <div className="nav-menu-auth">

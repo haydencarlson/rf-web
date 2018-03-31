@@ -1,0 +1,13 @@
+.breadcrumb-container {
+  box-sizing: border-box;
+  background-color: #2d303d;
+  height: 38px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  font-family: Roboto;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4); }
