@@ -1,0 +1,18 @@
+header {
+  .header-container {
+    height: 200px;
+    background-color: #090d1a;
+    border-bottom: 1px solid #434652;
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+      img {
+        padding-top:20px;
+        height:100px;
+        width: auto;
+      }
+    }
+  }
+}
