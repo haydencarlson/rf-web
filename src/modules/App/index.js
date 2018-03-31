@@ -4,6 +4,7 @@ import Home from '../Home/'
 import Header from '../Header';
 import { withRouter } from 'react-router-dom';
 import '../../styles/global.css';
+import '../../styles/components.css';
 
 class App extends React.Component {
 

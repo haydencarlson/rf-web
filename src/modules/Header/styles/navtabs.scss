@@ -1,13 +1,15 @@
 ul {
   padding: 0;
+  margin: 0;
   text-align: center;
   li {
     display: inline;
   }
 }
 .nav-menu-items {
-  width: 200px;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
   .nav-item {
     a {
       &.active {

@@ -1,12 +1,14 @@
 ul {
   padding: 0;
+  margin: 0;
   text-align: center; }
   ul li {
     display: inline; }
 
 .nav-menu-items {
-  width: 200px;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  justify-content: space-around; }
   .nav-menu-items .nav-item a {
     text-decoration: none;
     color: #7a85ad;

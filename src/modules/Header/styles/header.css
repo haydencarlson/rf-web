@@ -6,7 +6,7 @@ header .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px; }
+    padding-bottom: 45px; }
     header .header-container .logo-container img {
       padding-top: 20px;
       height: 100px;
