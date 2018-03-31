@@ -4,6 +4,7 @@ import './styles/header.css';
 import Logo from './components/Logo';
 import NavTabs from './components/NavTabs';
 import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 import Search from './components/Search';
 import { showModal } from '../ModalContainer/reduxer';
 
@@ -25,6 +26,7 @@ class Header extends Component {
             <NavTabs {...this.props} items={this.state.navItems}/>
             <div className="nav-menu-auth">
               <SignIn {...this.props} />
+              <SignUp {...this.props} />
             </div>
           </div>
         </div>

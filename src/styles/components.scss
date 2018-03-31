@@ -1,8 +1,21 @@
 .button-primary {
+  cursor: pointer;
   width:60px;
   padding: 10px 20px;
   border-radius: 3px;
   border: 1px solid rgba(0,0,0,0.1);
+  border-color: #7a85ad !important;
+  text-align: center;
+  color: white;
+  font-family: Roboto;
+  font-size: 13px;
+}
+.button-secondary {
+  cursor: pointer;
+  width:60px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #3ca0ff;
   border-color: #7a85ad !important;
   text-align: center;
   color: white;
