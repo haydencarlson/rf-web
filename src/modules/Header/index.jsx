@@ -20,7 +20,7 @@ class Header extends Component {
       <header>
         <div className="header-container">
           <Logo />
-          <div className="nav-menu-items">
+          <div className="nav-menu-items rf-layout-container">
             <Search/>
             <NavTabs {...this.props} items={this.state.navItems}/>
             <div className="nav-menu-auth">

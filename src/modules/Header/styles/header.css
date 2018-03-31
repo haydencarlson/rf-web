@@ -1,6 +1,8 @@
 header .header-container {
+  margin-bottom: 20px;
   height: 200px;
-  background-color: #090d1a; }
+  background-color: #090d1a;
+  border-bottom: 1px solid #434652; }
   header .header-container .logo-container {
     display: flex;
     justify-content: center;
@@ -13,5 +15,5 @@ header .header-container {
   header .header-container .nav-menu-auth {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative; }
