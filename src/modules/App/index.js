@@ -10,7 +10,6 @@ import '../../styles/components.css';
 import './styles/app.css';
 
 class App extends React.Component {
-
   render() {
     return (
       <div>
