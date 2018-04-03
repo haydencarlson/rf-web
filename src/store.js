@@ -14,7 +14,8 @@ const initialState = {}
 const enhancers = []
 const middleware = [
   routerMiddleware(history),
-  sagaMiddleware
+  sagaMiddleware,
+  reduxCableCar
 ]
 
 if (process.env.NODE_ENV === 'development') {
@@ -37,9 +38,8 @@ const store = createStore(
 )
 const token = JSON.parse(localStorage.getItem('token'));
 const ChatChannel = {
-  params: { ...token },
-  prefix: 'RAILS',
-  wsURL: 'ws://localhost:3001/cable'
+  params: { ...token, room: 'ChatChannel' },
+  prefix: 'CHAT_CHANNEL'
 };
 reduxCableCar.connect(store, 'ChatChannel', ChatChannel);
 sagaMiddleware.run(globalSagas)

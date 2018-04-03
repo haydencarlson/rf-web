@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { reduxForm, Field } from 'redux-form';
 import { postRequest } from '../../../utils';
 
