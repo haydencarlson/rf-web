@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import Home from '../Home/'
+import Home from '../../layouts/Home'
 import Header from '../Header';
 import Breadcrumb from '../../components/breadcrumb';
 import ModalContainer from '../ModalContainer';

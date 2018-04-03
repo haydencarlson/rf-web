@@ -16,4 +16,5 @@ header .header-container {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    position: relative; }
+    position: relative;
+    bottom: 5px; }

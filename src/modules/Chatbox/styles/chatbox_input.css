@@ -1,0 +1,27 @@
+.rt-layout-container {
+  max-width: 85%;
+  margin: auto; }
+
+.chatbox-input-container {
+  width: 100%;
+  background: #191d29;
+  height: 50px;
+  position: absolute;
+  bottom: 0px; }
+  .chatbox-input-container .chatbox-input {
+    box-sizing: border-box;
+    background: #191d29;
+    border: none;
+    height: 50px;
+    width: 90%;
+    outline: none;
+    padding-left: 10px;
+    color: white; }
+  .chatbox-input-container .chatbox-send-button {
+    border: none;
+    background: #3ca0ff;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px; }
+    .chatbox-input-container .chatbox-send-button .fa-level-down {
+      color: white; }
