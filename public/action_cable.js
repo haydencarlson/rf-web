@@ -23,7 +23,11 @@
           if (url == null) {
             url = (ref = this.getConfig("url")) != null ? ref : this.INTERNAL.default_mount_path;
           }
-          return new ActionCable.Consumer(this.createWebSocketURL(url));
+          var token = JSON.parse(localStorage.getItem('token'));
+          var client = token['client'];
+          var uid = token['uid'];
+          var atoken = token['access-token'];
+          return new ActionCable.Consumer(this.createWebSocketURL(url + "?client=" + client + '&uid=' + uid + '&atoken=' + atoken));
         },
         getConfig: function(name) {
           var element;

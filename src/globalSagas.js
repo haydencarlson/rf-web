@@ -4,6 +4,7 @@ import {
 } from './modules/Chatbox/sagas';
 
 const sagas = [
+  attemptSendNewChatboxMessage
 ];
 
 function* globalSagas() {

@@ -1,12 +1,12 @@
 import React from 'react'
-import { push } from 'react-router-redux'
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import ChatboxContainer from './components/ChatboxContainer';
-class Chatbox extends React.Component {
+import { sendChatboxMessage } from './reduxer';
 
+class Chatbox extends React.Component {
   sendMessage = (e, message) => {
     e.preventDefault();
+    this.props.sendChatboxMessage(message);
   }
 
   render() {
@@ -19,4 +19,8 @@ class Chatbox extends React.Component {
   }
 }
 
-export default Chatbox;
+const mapDispatchToProps = {
+  sendChatboxMessage: sendChatboxMessage
+}
+
+export default connect(null, mapDispatchToProps)(Chatbox);

@@ -1,10 +1,12 @@
-import { takeLatest, call, put } from 'redux-saga/effects';
+import { takeLatest, put } from 'redux-saga/effects';
 import {
-  SEND_NEW_CHATBOX_MESSAGE
+  SEND_NEW_CHATBOX_MESSAGE,
+  sendMessageThroughSocket
 } from './reduxer';
 
 function* newMessage(action) {
-  console.log(action);
+  yield put(sendMessageThroughSocket(action.message))
+
 }
 
 export function* attemptSendNewChatboxMessage() {

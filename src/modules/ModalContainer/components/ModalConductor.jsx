@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import ModalErrorChecker from './ModalErrorChecker';
 import * as modalTypes from '../modalTypes';
 import SignIn from './SignIn';

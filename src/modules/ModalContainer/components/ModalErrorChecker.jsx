@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class ModalErrorChecker extends Component {
   constructor(props) {
