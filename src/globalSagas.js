@@ -1,7 +1,9 @@
 import { fork, all } from 'redux-saga/effects';
+import {
+  attemptSendNewChatboxMessage
+} from './modules/Chatbox/sagas';
 
 const sagas = [
-  // NOTE: put other app sagas here
 ];
 
 function* globalSagas() {
