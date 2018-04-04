@@ -1,0 +1,11 @@
+.chat-messages-container {
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  box-sizing: border-box; }
+  .chat-messages-container ul {
+    overflow-y: scroll;
+    max-height: 100%; }
+  .chat-messages-container .chat-message {
+    color: white;
+    display: block; }

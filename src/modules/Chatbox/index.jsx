@@ -13,7 +13,9 @@ class Chatbox extends React.Component {
     return (
       <div>
         <h1>Home</h1>
-        <ChatboxContainer onSendMessage={this.sendMessage}/>
+        <ChatboxContainer
+          messages={this.props.messages}
+          onSendMessage={this.sendMessage}/>
       </div>
     )
   }
@@ -23,4 +25,8 @@ const mapDispatchToProps = {
   sendChatboxMessage: sendChatboxMessage
 }
 
-export default connect(null, mapDispatchToProps)(Chatbox);
+const mapStateToProps = (state) => ({
+  messages: state.chatbox.messages
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Chatbox);
