@@ -6,6 +6,10 @@
   .chat-messages-container ul {
     overflow-y: scroll;
     max-height: 100%; }
-  .chat-messages-container .chat-message {
+  .chat-messages-container .chat-message-container {
     color: white;
-    display: block; }
+    display: block;
+    padding: 7px;
+    border-bottom: 1px solid #434652; }
+    .chat-messages-container .chat-message-container .chat-message-text {
+      text-align: left; }
