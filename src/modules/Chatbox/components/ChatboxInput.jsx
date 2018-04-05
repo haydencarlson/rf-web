@@ -9,6 +9,11 @@ class ChatboxInput extends React.Component {
     }
   }
 
+  onSendMessage = (e, message) => {
+    e.preventDefault();
+    this.setState({message: ''});
+    this.props.onSendMessage(e, message);
+  }
   render () {
     return (
       <div className="chatbox-input-container">
@@ -20,7 +25,7 @@ class ChatboxInput extends React.Component {
             onChange={(e) => this.setState({message: e.target.value})}
             >
           </input>
-          <button onClick={(e) => this.props.onSendMessage(e, this.state.message)}className="chatbox-send-button">
+          <button onClick={(e) => this.onSendMessage(e, this.state.message)}className="chatbox-send-button">
             <i className="fa fa-level-down fa-rotate-90"></i>
           </button>
         </form>

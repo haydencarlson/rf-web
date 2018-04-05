@@ -5,7 +5,6 @@ import { sendChatboxMessage } from './reduxer';
 
 class Chatbox extends React.Component {
   sendMessage = (e, message) => {
-    e.preventDefault();
     this.props.sendChatboxMessage(message);
   }
 
