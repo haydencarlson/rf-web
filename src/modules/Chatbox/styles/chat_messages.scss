@@ -7,8 +7,13 @@
     overflow-y: scroll;
     max-height: 100%;
   }
-  .chat-message {
+  .chat-message-container {
     color: white;
     display: block;
+    padding: 7px;
+    border-bottom: 1px solid #434652;
+    .chat-message-text {
+      text-align: left;
+    }
   }
 }
