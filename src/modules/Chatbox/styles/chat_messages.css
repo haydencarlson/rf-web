@@ -5,7 +5,8 @@
   box-sizing: border-box; }
   .chat-messages-container ul {
     overflow-y: scroll;
-    max-height: 100%; }
+    max-height: 100%;
+    height: 100%; }
   .chat-messages-container .chat-message-container {
     color: white;
     display: block;
@@ -13,3 +14,5 @@
     border-bottom: 1px solid #434652; }
     .chat-messages-container .chat-message-container .chat-message-text {
       text-align: left; }
+      .chat-messages-container .chat-message-container .chat-message-text span {
+        display: block; }

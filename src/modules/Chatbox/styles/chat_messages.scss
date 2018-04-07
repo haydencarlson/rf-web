@@ -6,6 +6,7 @@
   ul {
     overflow-y: scroll;
     max-height: 100%;
+    height: 100%;
   }
   .chat-message-container {
     color: white;
@@ -14,6 +15,9 @@
     border-bottom: 1px solid #434652;
     .chat-message-text {
       text-align: left;
+      span {
+        display: block;
+      }
     }
   }
 }

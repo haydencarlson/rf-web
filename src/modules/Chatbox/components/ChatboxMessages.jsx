@@ -15,6 +15,7 @@ class ChatboxMessages extends React.Component {
         <ChatboxMessage
           id={message.id}
           key={message.id}
+          username={message.username}
           content={message.content}
           created={message.created_at}
           />
