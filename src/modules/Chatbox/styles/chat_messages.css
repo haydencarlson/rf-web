@@ -13,6 +13,12 @@
     padding: 7px;
     border-bottom: 1px solid #434652; }
     .chat-messages-container .chat-message-container .chat-message-text {
-      text-align: left; }
+      text-align: left;
+      margin-left: 40px; }
       .chat-messages-container .chat-message-container .chat-message-text span {
-        display: block; }
+        display: block;
+        font-size: 14px; }
+    .chat-messages-container .chat-message-container .chat-message-avatar {
+      width: 30px;
+      display: inline;
+      float: left; }
