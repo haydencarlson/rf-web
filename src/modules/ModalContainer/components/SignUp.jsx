@@ -26,6 +26,10 @@ class SignUp extends React.Component {
           <label htmlFor="firstName">Password Confirmation</label>
           <Field name="password_confirmation" component="input" type="text" />
         </div>
+        <div>
+          <label htmlFor="nickName">Username</label>
+          <Field name="nickname" component="input" type="text" />
+        </div>
         <button type="submit" disabled={pristine || submitting}>
           Submit
         </button>

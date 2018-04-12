@@ -4,7 +4,9 @@ import Chatbox from '../modules/Chatbox';
 class Home extends React.Component {
   render() {
     return (
-      <Chatbox/>
+      <React.Fragment>
+        <Chatbox/>
+      </React.Fragment>
     )
   }
 }

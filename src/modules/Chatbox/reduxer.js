@@ -27,7 +27,7 @@ export default (state = { messages: []}, action) => {
     console.log(action.payload.messages)
       return {
         ...state,
-        messages: action.payload.messages
+        messages: action.payload.messages.reverse()
       }
     default:
       return state;
