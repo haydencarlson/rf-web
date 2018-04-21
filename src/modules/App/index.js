@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
 import Home from '../../layouts/Home'
+import Forum from '../../layouts/Forum'
 import Header from '../Header';
 import Breadcrumb from '../../components/breadcrumb';
 import ModalContainer from '../ModalContainer';
@@ -18,6 +19,7 @@ class App extends React.Component {
         <main className="rt-layout-container">
           <Breadcrumb/>
           <Route exact path="/" component={Home} />
+          <Route exact path="/forums" component={Forum} />
         </main>
         <ModalContainer/>
       </div>

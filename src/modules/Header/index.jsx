@@ -12,7 +12,7 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navItems: [{text: "Home", url: '/'}, {text: "Forums", url: '/forum'}]
+      navItems: [{text: "Home", url: '/'}, {text: "Forums", url: '/forums'}]
     }
   }
 
