@@ -24,7 +24,6 @@
             url = (ref = this.getConfig("url")) != null ? ref : this.INTERNAL.default_mount_path;
           }
           var token = JSON.parse(localStorage.getItem('token'));
-          console.log(token)
           if (token) {
             var client = token['client']
             var uid = token['uid'];
