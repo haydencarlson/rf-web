@@ -5,7 +5,7 @@ class ChatboxMessage extends React.Component {
     return (
       <li className="chat-message-container">
         <img src={defaultAvatar} className="chat-message-avatar"/>
-        <div class="chat-message-text">
+        <div className="chat-message-text">
           <span>{this.props.username}</span>
           <span>{this.props.content}</span>
         </div>

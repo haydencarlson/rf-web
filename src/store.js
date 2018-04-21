@@ -39,7 +39,8 @@ const store = createStore(
 const token = JSON.parse(localStorage.getItem('token'));
 const ChatChannel = {
   params: { ...token, room: 'ChatChannel' },
-  prefix: 'CHAT_CHANNEL'
+  prefix: 'CHAT_CHANNEL',
+  wsURL: 'wss://api.bwgforums.com/'
 };
 reduxCableCar.connect(store, 'ChatChannel', ChatChannel);
 sagaMiddleware.run(globalSagas)
