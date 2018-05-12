@@ -3,31 +3,24 @@ import { reduxForm, Field } from 'redux-form';
 import { postRequest } from '../../../utils';
 
 class SignUp extends React.Component {
-
-  apiCall() {
-    postRequest('/api/v1/posts', {'test': 'test'})
-      .then((response) => {
-
-      });
-  }
   render() {
     var { handleSubmit, pristine, submitting } = this.props;
     return (
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="firstName">Username</label>
+          <label htmlFor="email">Email</label>
           <Field name="email" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="firstName">Password</label>
+          <label htmlFor="password">Password</label>
           <Field name="password" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="firstName">Password Confirmation</label>
+          <label htmlFor="password_confirmation">Password Confirmation</label>
           <Field name="password_confirmation" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="nickName">Username</label>
+          <label htmlFor="nickname">Username</label>
           <Field name="nickname" component="input" type="text" />
         </div>
         <button type="submit" disabled={pristine || submitting}>
