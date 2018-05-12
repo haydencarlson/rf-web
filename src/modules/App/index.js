@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
+import { connect } from 'react-redux';
 import Home from '../../layouts/Home'
 import Forum from '../../layouts/Forum'
 import Header from '../Header';
@@ -9,8 +10,14 @@ import { withRouter } from 'react-router-dom';
 import '../../styles/global.css';
 import '../../styles/components.css';
 import './styles/app.css';
+import { fetchInitialState } from './reduxer';
 
 class App extends React.Component {
+
+  componentWillMount() {
+    this.props.fetchInitialState();
+  }
+
   render() {
     return (
       <div>
@@ -27,4 +34,8 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(App);
+const mapDispatchToProps = {
+  fetchInitialState
+}
+
+export default withRouter(connect(null, mapDispatchToProps)(App));
