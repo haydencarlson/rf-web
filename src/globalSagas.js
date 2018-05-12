@@ -3,8 +3,13 @@ import {
   attemptSendNewChatboxMessage
 } from './modules/Chatbox/sagas';
 
+import {
+  initialState
+} from './modules/App/sagas';
+
 const sagas = [
-  attemptSendNewChatboxMessage
+  attemptSendNewChatboxMessage,
+  initialState
 ];
 
 function* globalSagas() {
